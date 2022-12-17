@@ -5,7 +5,7 @@
 primary:
   name: redis-primary
   image: harbor.corp.det.gov.ae/eticketing.io/redis:latest
-  port: 6379
+  port: 63790
   
   computerc:
     limits:
