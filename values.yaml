@@ -1,0 +1,14 @@
+# Default values for redis cluster.
+# This is a YAML-formatted file.
+# Declare variables to be passed into the templates.
+
+primary:
+  name: redis-primary
+  image: harbor.corp.det.gov.ae/eticketing.io/redis:latest
+  port: 6379
+
+replica:
+  name: redis-replica
+  replicas: 2
+  image: harbor.corp.det.gov.ae/eticketing.io/redis:latest
+  port: 6379    
