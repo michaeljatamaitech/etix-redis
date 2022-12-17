@@ -12,3 +12,5 @@ replica:
   replicas: 2
   image: harbor.corp.det.gov.ae/eticketing.io/redis:latest
   port: 6379    
+  
+  
