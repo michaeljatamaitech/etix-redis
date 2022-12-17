@@ -6,11 +6,25 @@ primary:
   name: redis-primary
   image: harbor.corp.det.gov.ae/eticketing.io/redis:latest
   port: 6379
+  
+  computerc:
+    limits:
+      cpu: 1
+      memory: "512Mi"
+    requests:
+      cpu: 1
+      memory: "512Mi"
 
 replica:
   name: redis-replica
   replicas: 2
   image: harbor.corp.det.gov.ae/eticketing.io/redis:latest
-  port: 6379    
-  
-  
+  port: 6379
+
+  computerc:
+    limits:
+      cpu: 1
+      memory: "512Mi"
+    requests:
+      cpu: 1
+      memory: "512Mi"  
